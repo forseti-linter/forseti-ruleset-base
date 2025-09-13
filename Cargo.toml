@@ -1,13 +1,17 @@
 [package]
 name = "forseti_ruleset_base"
-version = "0.1.0"
+description = "Base ruleset for Forseti linter - provides basic linting rules"
+repository = "https://github.com/forseti-linter/forseti-ruleset-base/"
+authors = ["Marc Seiler <digitalfiz@proton.me>"]
+version = "0.1.1"
 edition = "2021"
+license-file = "LICENSE"
 
 [[bin]]
 name = "forseti_ruleset_base"
 path = "src/main.rs"
 
 [dependencies]
-forseti_sdk = "*"
+forseti_sdk = ">=0.1"
 anyhow = "1.0"
 serde_json = "1.0"
